@@ -1,7 +1,7 @@
 ### HTML Elements
 * DONE Text area for the area
 * DONE Button (static)
-* DONEParagraph to hold the answer (dynamic) 
+* DONE Paragraph to hold the answer (dynamic) 
 
 ### What State Do I Need?
 * Answer
