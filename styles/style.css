@@ -96,6 +96,16 @@ footer {
     color: linen;
 }
 
-#question {
+#repeat-question, #prev-question {
     visibility: hidden;
+}
+
+#answer-display {
+    font-size: 1.8rem;
+    font-family: 'Pacifico', 'cursive';
+    font-weight: 700;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
 }

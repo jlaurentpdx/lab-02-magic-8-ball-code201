@@ -8,7 +8,7 @@ describe('Example Test', ()=>{
         it('presents a question', ()=>{
             cy.get('#input').type('I have a question?');
             cy.get('#button').click();
-            cy.get('#question').should('be.visible');
+            cy.get('#prev-question').should('be.visible');
         });
     });
 });

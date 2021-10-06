@@ -2,7 +2,8 @@ import { answers } from './answers.js';
 
 const input = document.getElementById('input');
 const button = document.getElementById('button');
-const question = document.getElementById('question');
+const prevQuestion = document.getElementById('prev-question');
+const repeatQuestion = document.getElementById('repeat-question');
 const answerDisplay = document.getElementById('answer-display');
 
 const generateRandomInt = (max) => {
@@ -20,13 +21,14 @@ button.addEventListener('click', () => {
     if (input.value === '') {
         alert('Questions go in the box, please.');
     } else {
-        updateTextContent(question, `You asked ${input.value}`);
+        updateTextContent(prevQuestion, input.value);
         updateTextContent(answerDisplay, randomAnswer);
         
         input.value = '';
         input.placeholder = '...another?';
         
-        question.style.visibility = 'visible';
+        repeatQuestion.style.visibility = 'visible';
+        prevQuestion.style.visibility = 'visible';
     }
 });
 
