@@ -9,27 +9,36 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Magic 8-Ball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&display=swap" rel="stylesheet">    
+    <title>That's a-spicy a-8-Ball!</title>
 </head>
 
 <body>
-    <header><h1>Magic 8-Ball</h1></header>
-    <main>
-        <h1>Ask me a question. <em>Any</em> question.</h1>
-        <textarea 
-            id="input" 
-            cols="30" 
-            rows="2" 
-            placeholder="...and make it good."></textarea>
-        <br>
-        <button id="button">Really. Ask.</button>
+    <section id = "left-container">
+        <header><h1>Jojo's Kitchen</h1></header>
+        <main>
+            <section id="container">
+                <h2>Dinner in need of some <em>spice?</em></h2>
+                <p>You're in Chef Jojo's kitchen now - and he's <em>always</em> available for a bit of spice advice!</p>
+                <p>Fans know he's fond of inquiries... try phrasing your request as a question for best results!</p>
+                <textarea 
+                    id="input" 
+                    cols="30" 
+                    rows="2" 
+                    placeholder="How can I make my PB & J more than just PB-O-K?"></textarea>
+                <br>
+                <button id="button">Feeling <em>spicy</em>?</button>
 
-        <p id="question">...</p>
-        <p id="answer-display">I'm waiting...</p>
-    </main>
-    <footer>
-        -codo by jojo, 2021
-    </footer>
+                <p id="question">...</p>
+                <p id="answer-display">I'm waiting...</p>
+            </section>
+        </main>
+        <footer>
+            -codo by jojo, 2021
+        </footer>
+    </section>
     <script type="module" src="./app.js"></script>
 </body>
 

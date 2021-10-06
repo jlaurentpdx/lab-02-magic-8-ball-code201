@@ -1,5 +1,99 @@
 body {
+    display: grid;
+    grid-template-columns: 50%;
+    background-image: url(../assets/kitchen-img.jpg);
+    background-position: 10%;
     text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+h1, h2, footer {
+    font-family: 'Pacifico', cursive;
+}
+
+p, textarea, button {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+ 
+header {
+    background-color: papayawhip;
+    border-radius: 15px;
+    height: min-content;
+    min-width: 600px;
+    margin: 20px;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: linen;
+    border: 10px double black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+main {
+    font-size: 1rem;
+    background-color: papayawhip;
+    border-radius: 15px;
+    margin: 20px;
+    height: max-content;
+    padding: 1px;
+}
+
+#container {
+    background-color: linen;
+    border: 10px dotted black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    line-height: 50%;
+    padding: 0;
+}
+
+textarea {
+    padding: 20px;
+    margin: 20px;
+    border: 10px double linen;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: whitesmoke;
+}
+
+textarea:empty {
+    font-style: italic;
+}
+
+button {
+    padding: 20px;
+    border: 2px double gray;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: salmon;
+}
+
+button:hover {
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 10px 0 0 0;
+}
+
+em {
+    font-style: italic;
+}
+
+footer {
+    color: linen;
 }
 
 #question {
