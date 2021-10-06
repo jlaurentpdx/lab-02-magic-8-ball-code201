@@ -17,8 +17,16 @@ button.addEventListener('click', () => {
     const randomIdx = generateRandomInt(answers.length);
     const randomAnswer = answers[randomIdx];
 
-    updateTextContent(question, `You asked ${input.value}`);
-    updateTextContent(answerDisplay, randomAnswer);
-    
-    input.placeholder = '...another?';
+    if (input.value === '') {
+        alert('Questions go in the box, please.');
+    } else {
+        updateTextContent(question, `You asked ${input.value}`);
+        updateTextContent(answerDisplay, randomAnswer);
+        
+        input.value = '';
+        input.placeholder = '...another?';
+        
+        question.style.visibility = 'visible';
+    }
 });
+

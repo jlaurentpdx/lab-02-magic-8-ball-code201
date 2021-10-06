@@ -5,8 +5,10 @@ describe('Example Test', ()=>{
     });
 
     describe('HTML elements', ()=>{   
-        it('contains the alchemy logo', ()=>{
-            cy.get('header').should('be.visible');
+        it('presents a question', ()=>{
+            cy.get('#input').type('I have a question?');
+            cy.get('#button').click();
+            cy.get('#question').should('be.visible');
         });
     });
 });
