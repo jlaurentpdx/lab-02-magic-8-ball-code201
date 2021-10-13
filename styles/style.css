@@ -1,6 +1,4 @@
 body {
-    display: grid;
-    grid-template-columns: 50%;
     background-image: url(../assets/kitchen-img.jpg);
     background-position: 10%;
     text-align: center;
@@ -21,39 +19,35 @@ header {
     background-color: papayawhip;
     border-radius: 15px;
     height: min-content;
-    min-width: 600px;
-    margin: 20px;
+    width: 50%;
+    margin: auto;
     padding: 1px;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     background-color: linen;
     border: 10px double black;
     border-radius: 10px;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 main {
-    font-size: 1rem;
+    font-size: 1.5vw;
     background-color: papayawhip;
     border-radius: 15px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
     height: max-content;
     padding: 1px;
 }
 
-#container {
-    background-color: linen;
-    border: 10px dotted black;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
+h2 {
+    font-size: 2rem;
+    margin: 10px 0 0 0;
 }
 
 p {
-    line-height: 50%;
     padding: 0;
 }
 
@@ -64,6 +58,7 @@ textarea {
     border-radius: 10px;
     background-color: #1f1f1f;
     color: whitesmoke;
+    width: 30vw;
 }
 
 textarea:empty {
@@ -71,9 +66,9 @@ textarea:empty {
 }
 
 button {
-    padding: 20px;
+    padding: 10px;
     border: 2px double gray;
-    border-radius: 10px;
+    border-radius: 5px;
     color: whitesmoke;
     background-color: salmon;
 }
@@ -81,11 +76,6 @@ button {
 button:hover {
     background-color: crimson;
     color: whitesmoke;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin: 10px 0 0 0;
 }
 
 em {
@@ -96,16 +86,40 @@ footer {
     color: linen;
 }
 
+.spicy {
+    color: red;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+}
+
+#container {
+    background-color: linen;
+    border: 10px dotted black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
 #repeat-question, #prev-question {
     visibility: hidden;
 }
 
 #answer-display {
-    font-size: 1.8rem;
+    font-size: 2.5vw;
     font-family: 'Pacifico', 'cursive';
     font-weight: 700;
     background-color: white;
     padding: 40px;
+    margin: 10px;
     border-radius: 10px;
     text-align: center;
+}
+
+#big-head {
+    max-width: 650px;
+    padding: 0;
+    margin: 0;
 }
